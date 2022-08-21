@@ -1,10 +1,50 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<main>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark pt-4 pb-0 py-md-5">
+      <div class="container">
+        <a class="navbar-brand mb-4 mb-md-0" href="#">
+          <img class="d-md-none" src="./assets/images/logo2.svg" alt="logo" width="24">
+          <img class="d-none d-md-block" src="./assets/images/logo.svg" alt="logo-pc" width="174">
+        </a>
+        <button class="navbar-toggler mb-3 mt-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="material-icons">menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center text-lg-end ms-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">課程介紹</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-center justify-content-center" href="#">
+                <span class="material-icons me-1">account_circle</span>
+                登入
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
   <section class="banner d-flex justify-content-center align-items-center">
       <div class="container">
         <div class="banner-inline position-relative">
@@ -93,3 +133,16 @@ current: index
   </section>
 </main>
 
+
+
+    <footer class="footer bg-dark">
+      <div class="container-fluid d-flex justify-content-center">
+        <p class="mt-4 mb-4">Coding Home © 2022 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
