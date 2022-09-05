@@ -26,7 +26,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #2D2D2D;
-  --bs-font-sans-serif: system-ui, -apple-system, "Azeret Mono", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -12946,6 +12946,10 @@ fieldset:disabled .btn {
           font-feature-settings: 'liga';
 }
 
+.azeret {
+  font-family: 'Azeret Mono', monospace;
+}
+
 body {
   background: #1C1C1C;
 }
@@ -12981,6 +12985,10 @@ body {
 .navbar-expand-md .navbar-nav .nav-link {
   padding: 12px 24px;
   font-size: 18px;
+}
+
+footer {
+  background: #1A1A1A;
 }
 
 footer p {
@@ -13416,8 +13424,21 @@ footer p {
   }
 }
 
+.classes .select {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.classes .select:hover {
+  color: #fff;
+}
+
 .classes .card {
   border-radius: 24px;
+}
+
+.classes .card:hover {
+  border: 1px solid #62DB54;
 }
 
 .classes .card-body {
@@ -13450,10 +13471,17 @@ footer p {
 
 .classes .btn {
   padding: 8px 32px;
+  border: 0px;
+}
+
+.classes .btn:hover {
+  color: #fff;
+}
+
+.classes .btn-gradient {
   background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
   background: linear-gradient(104deg, #09ACF5, #62DB54);
-  border: 0px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .advantage-list {
@@ -13911,6 +13939,249 @@ footer p {
   .join-us .btn {
     padding: 8px 32px;
   }
+}
+
+.learning-selection {
+  padding: 40px 0 0;
+}
+
+.learning-selection .learning-list {
+  overflow-x: auto;
+  padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .learning-selection .learning-list {
+    padding-bottom: 48px;
+  }
+}
+
+.learning-selection .btn {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 16px 32px;
+  border-radius: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.learning-selection .btn:hover {
+  border: 1px solid #62DB54;
+  color: #62DB54;
+}
+
+.learning-selection .btn:active {
+  border: 1px solid #62DB54;
+  color: #62DB54;
+}
+
+.class-selection .card {
+  border-radius: 24px;
+}
+
+.class-selection .card-body h3, .class-selection .card-body .h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .class-selection .card-body h3, .class-selection .card-body .h3 {
+    font-size: 1.5rem;
+  }
+}
+
+.class-selection h4, .class-selection .h4 {
+  font-size: 1rem;
+}
+
+.class-selection h4 span, .class-selection .h4 span {
+  font-size: 2rem;
+  line-height: 37px;
+}
+
+.class-selection .first {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .class-selection .first {
+    margin-bottom: 4px;
+  }
+}
+
+.class-selection .btn {
+  padding: 8px 32px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.class-selection .btn-outline {
+  border: 1px solid #fff;
+}
+
+.class-selection .btn-gradient {
+  border: 1px solid #2D2D2D;
+  background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
+  background: linear-gradient(104deg, #09ACF5, #62DB54);
+  color: #fff;
+}
+
+.class-detail .card {
+  border-radius: 24px;
+}
+
+.class-detail .card-body .gray {
+  white-space: nowrap;
+  color: #C1C1C1;
+}
+
+.class-detail .card-footer {
+  border-top: 1px solid #C1C1C1;
+}
+
+.class-detail h3, .class-detail .h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.class-detail h3::before, .class-detail .h3::before {
+  margin-right: 8px;
+  content: '';
+  border-left: 2px solid #62DB54;
+}
+
+.class-detail .class-introduction {
+  padding-left: 20px;
+  list-style-type: square;
+}
+
+.class-detail .class-introduction li::marker {
+  color: #62DB54;
+}
+
+.class-detail .sub-menu {
+  border: 1px solid #fff;
+}
+
+.class-detail .white-blocks {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}
+
+@media (min-width: 992px) {
+  .class-detail .list-hover:hover {
+    color: #62DB54;
+  }
+}
+
+.class-detail .btn-circle-size {
+  padding: 8px 8px;
+}
+
+.class-detail .btn-gradient {
+  border: 1px solid #2D2D2D;
+  background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
+  background: linear-gradient(104deg, #09ACF5, #62DB54);
+  color: #fff;
+}
+
+.classes-other {
+  background: #000;
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+  .classes-other {
+    padding: 80px 0;
+  }
+}
+
+.classes-other h2, .classes-other .h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 32px;
+  margin-bottom: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.classes-other h2::after, .classes-other .h2::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background: #62DB54;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -16px;
+}
+
+@media (min-width: 768px) {
+  .classes-other h2, .classes-other .h2 {
+    font-size: 1.75rem;
+    line-height: 40px;
+    margin-bottom: 66px;
+  }
+}
+
+.classes-other .select {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.classes-other .select:hover {
+  color: #fff;
+}
+
+.classes-other .card {
+  border-radius: 24px;
+}
+
+.classes-other .card:hover {
+  border: 1px solid #62DB54;
+}
+
+.classes-other .card-body {
+  border-bottom: 1px solid #C1C1C1;
+}
+
+.classes-other .card-body h3, .classes-other .card-body .h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.classes-other h4, .classes-other .h4 {
+  font-size: 1rem;
+}
+
+.classes-other h4 span, .classes-other .h4 span {
+  font-size: 2rem;
+  line-height: 37px;
+}
+
+.classes-other .first {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+  .classes-other .first {
+    margin-bottom: 38px;
+  }
+}
+
+.classes-other .btn {
+  padding: 8px 32px;
+  background: -o-linear-gradient(346deg, #09ACF5, #62DB54);
+  background: linear-gradient(104deg, #09ACF5, #62DB54);
+  border: 0px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=all.css.map */
