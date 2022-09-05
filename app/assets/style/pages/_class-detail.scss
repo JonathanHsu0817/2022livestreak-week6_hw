@@ -1,0 +1,121 @@
+.class-detail{
+    .card{
+        border-radius: 24px;
+    }
+    .card-body{
+        .gray{
+            white-space: nowrap;
+            color: #C1C1C1;
+        }
+    }
+    .card-footer{
+        border-top: 1px solid #C1C1C1;
+    }
+    h3{
+        display: flex;
+        &::before{
+            margin-right: 8px;
+            content:'';
+            border-left: 2px solid #62DB54;
+        }
+    }
+    .class-introduction{
+        padding-left: 20px;
+        list-style-type: square;
+        li::marker{
+            color: #62DB54;
+        }
+    }
+    .sub-menu{
+        border: 1px solid #fff;
+    }
+    .white-blocks{
+        width: 10px;
+        height: 10px;
+        background: #fff;
+    }
+    .list-hover:hover{
+        @include lg{
+            color: #62DB54;
+        }
+    }
+    .btn{
+        &-circle-size{
+            padding: 8px 8px;
+        }
+        &-gradient{
+            border: 1px solid #2D2D2D;
+            background: linear-gradient(104deg, #09ACF5, #62DB54);
+            color: #fff;
+        }
+    }
+}
+.classes-other{
+    background: #000;
+    padding: 40px 0;
+    @include md{
+      padding: 80px 0;
+    }
+    h2{
+      font-size: $h4-font-size;
+      font-weight: bold;
+      line-height: 32px;
+      margin-bottom: 42px;
+      display: flex;
+      position: relative;
+      &::after{
+        content:"";
+        width: 50px;
+        height: 3px;
+        background: #62DB54;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -16px;
+      }
+      @include md{
+        font-size: $h3-font-size;
+        line-height: 40px;
+        margin-bottom: 66px;
+      }
+    }
+    .select{
+        text-decoration: none;
+        color: rgba(#fff,0.85);
+        &:hover{
+            color: #fff;
+        }
+    }
+    .card{
+      border-radius: 24px;
+      &:hover{
+        border: 1px solid #62DB54;
+      }
+    }
+    .card-body{
+      border-bottom: 1px solid #C1C1C1;
+      h3{
+        font-size: $h4-font-size;
+        font-weight: bold;
+      }
+    }
+    h4{
+      font-size: $font-size-base;
+      span{
+        font-size: $h2-font-size;
+        line-height: 37px;
+      }
+    }
+    .first{
+      margin-bottom: 8px;
+      @include md{
+        margin-bottom: 38px;
+      }
+    }
+    .btn{
+      padding: 8px 32px;
+      background: linear-gradient(104deg, #09ACF5, #62DB54);
+      border: 0px;
+      color: #fff;
+    }
+  }

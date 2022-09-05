@@ -305,8 +305,18 @@
       margin-bottom: 66px;
     }
   }
+  .select{
+    text-decoration: none;
+    color: rgba(#fff,0.85);
+    &:hover{
+        color: #fff;
+    }
+  }
   .card{
     border-radius: 24px;
+    &:hover{
+      border: 1px solid #62DB54;
+    }
   }
   .card-body{
     border-bottom: 1px solid #C1C1C1;
@@ -330,9 +340,14 @@
   }
   .btn{
     padding: 8px 32px;
-    background: linear-gradient(104deg, #09ACF5, #62DB54);
     border: 0px;
-    color: #fff;
+    &:hover{
+      color:#fff;
+    }
+    &-gradient{
+      background: linear-gradient(104deg, #09ACF5, #62DB54);
+      color: rgba(#fff,0.85)
+    }
   }
 }
 

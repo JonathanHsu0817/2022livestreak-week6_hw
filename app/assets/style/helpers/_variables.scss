@@ -250,15 +250,15 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer * .75,
-  4: $spacer,
-  5: $spacer * 1.25,
-  6: $spacer * 1.5,
-  7: $spacer * 2,
-  8: $spacer * 2.5,
-  9: $spacer * 3,
+  1: $spacer * .25,//4
+  2: $spacer * .5,//8
+  3: $spacer * .75,//12
+  4: $spacer,//16
+  5: $spacer * 1.25,//20
+  6: $spacer * 1.5,//24
+  7: $spacer * 2,//32
+  8: $spacer * 2.5,//40
+  9: $spacer * 3,//48
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -420,7 +420,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, 'Azeret Mono', Roboto, "Helvetica Neue", Arial, 'Noto Sans TC', "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, 'Noto Sans TC', "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
